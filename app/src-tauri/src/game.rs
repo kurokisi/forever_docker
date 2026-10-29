@@ -89,7 +89,7 @@ pub fn spawn(settings: &Settings) -> Result<Child, String> {
         .args(["-launcherlogin", "-config", WTF_NAME])
         .current_dir(&settings.game_dir)
         .spawn()
-        .map_err(|e| tf("launch_failed", &[&"WowB.exe", &e]))
+        .map_err(|e| tf("launch_failed", &[&"Wow.exe", &e]))
 }
 
 #[cfg(target_os = "linux")]

@@ -47,7 +47,7 @@ const TEXTS = {
     language: 'Langue du launcher',
     systemLanguage: 'Langue du système',
     gameDir: 'Dossier du client',
-    gameDirHint: "· _classic_beta_, contient WowB.exe (ou l'app du jeu sur Mac)",
+    gameDirHint: "· _forever_, contient Wow.exe (ou l'app du jeu sur Mac)",
     browse: 'Parcourir',
     gameLocale: 'Langue du jeu',
     noFolder: 'Aucun dossier choisi',

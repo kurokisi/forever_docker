@@ -1,0 +1,14 @@
+diff --git a/src/server/game/Globals/ObjectMgr.cpp b/src/server/game/Globals/ObjectMgr.cpp
+index 6b5040bb..c968b0a0 100644
+--- a/src/server/game/Globals/ObjectMgr.cpp
++++ b/src/server/game/Globals/ObjectMgr.cpp
+@@ -171,6 +171,9 @@ bool normalizePlayerName(std::string& name)
+         return false;
+     tmp = tmp.substr(first, tmp.find_last_not_of(blanks) - first + 1);
+ 
++    // WoW Forever: ignore the surname when looking up a player.
++    tmp = tmp.substr(0, tmp.find_first_of(blanks));
++
+     wstrToLower(tmp);
+     if (!tmp.empty())
+         tmp[0] = wcharToUpper(tmp[0]);
